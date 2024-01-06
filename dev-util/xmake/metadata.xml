@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <upstream>
+    <bugs-to>https://github.com/xmake-io/xmake/issues</bugs-to>
+    <remote-id type="github">xmake-io/xmake</remote-id>
+  </upstream>
+  <longdescription lang="en">
+    xmake is a lightweight cross-platform build utility based on Lua. It uses
+    xmake.lua to maintain project builds. Compared with makefile/CMakeLists.txt,
+    the configuration syntax is more concise and intuitive. It is very friendly
+    to novices and can quickly get started in a short time. Let users focus more
+    on actual project development.
+    It can compile the project directly like Make/Ninja, or generate project
+    files like CMake/Meson, and it also has a built-in package management system
+    to help users solve the integrated use of C/C++ dependent libraries.
+  </longdescription>
+  <longdescription lang="cn">
+    Xmake 是一个基于 Lua 的轻量级跨平台构建工具。
+    它非常的轻量，没有任何依赖，因为它内置了 Lua 运行时。
+    它使用 xmake.lua 维护项目构建，相比 makefile/CMakeLists.txt，
+    配置语法更加简洁直观，对新手非常友好，短时间内就能快速入门，
+    能够让用户把更多的精力集中在实际的项目开发上。
+
+我们能够使用它像 Make/Ninja 那样可以直接编译项目，也可以像 CMake/Meson 那样生成工程文件，另外它还有内置的包管理系统来帮助用户解决 C/C++ 依赖库的集成使用问题。
+  </longdescription>
+</pkgmetadata>
