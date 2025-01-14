@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <upstream>
+    <bugs-to>https://github.com/xmake-io/xmake/issues</bugs-to>
+    <remote-id type="github">wessel-novacustom/clevo-keyboard</remote-id>
+  </upstream>
+  <longdescription lang="en">
+  Kernel module for keyboard backlighting for regular Clevo laptops and other vendors, based on TUXEDO Computers keyboard application
+  </longdescription>
+</pkgmetadata>
