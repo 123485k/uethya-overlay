@@ -15,7 +15,7 @@ else
 	"
 	KEYWORDS="~amd64 ~x86"
 fi
-
+RESTRICT="strip"
 DESCRIPTION="Partition cloning tool"
 HOMEPAGE="https://partclone.org"
 
@@ -54,6 +54,10 @@ DEPEND="
 BDEPEND="
 	virtual/pkgconfig
 "
+
+PATCHES=(
+	"${FILESDIR}"/${PN}-fix-ncurses-linking.patch
+)
 
 DOCS=(
 	AUTHORS
