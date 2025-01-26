@@ -10,13 +10,10 @@ SRC_URI="https://github.com/stevenshiau/drbl/archive/refs/tags/v${PV}.tar.gz -> 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
 
-DEPEND="
+RDEPEND="${DEPEND}
 	net-misc/ipcalc
 	sys-devel/bc
 	sys-fs/e2fsprogs
 	net-misc/wakeonlan
 "
-RDEPEND="${DEPEND}"
-BDEPEND=""
