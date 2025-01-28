@@ -15,8 +15,6 @@ KEYWORDS="~amd64"
 DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
-S="${WORKDIR}/package"
-
 src_compile() {
 	:
 }
