@@ -9,7 +9,7 @@ DESCRIPTION="Kernel module for keyboard backlighting for Clevo laptops"
 HOMEPAGE="https://github.com/wessel-novacustom/clevo-keyboard"
 
 if [[ ${PV} == 9999 ]] ; then
-	EGIT_REPO_URI="https://github.com/wessel-novacustom/clevo-keyboard.git"
+	EGIT_REPO_URI="https://github.com/123485k/clevo-keyboard.git"
 	inherit git-r3
 	unset MODULES_KERNEL_MAX
 else
