@@ -1,0 +1,33 @@
+diff --git a/.gitignore b/.gitignore
+index 7e08d64..33c7778 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -7,7 +7,9 @@
+ *.o
+ modules.order
+ /Module.symvers
+-
++#clangd artifacts
++*.idx
++compile_commands.json
+ # debuild artifacts
+ /debian/*.debhelper
+ /debian/*.debhelper.log
+diff --git a/src/tuxedo_compatibility_check/tuxedo_compatibility_check.c b/src/tuxedo_compatibility_check/tuxedo_compatibility_check.c
+index 8ae64af..cad8ce9 100644
+--- a/src/tuxedo_compatibility_check/tuxedo_compatibility_check.c
++++ b/src/tuxedo_compatibility_check/tuxedo_compatibility_check.c
+@@ -216,12 +216,7 @@ static const struct dmi_system_id tuxedo_dmi_string_match[] = {
+ };
+ 
+ bool tuxedo_is_compatible(void) {
+-	if (dmi_check_system(tuxedo_dmi_string_match)
+-	    || (x86_match_cpu(skip_tuxedo_dmi_string_check_match)
+-	    && !x86_match_cpu(force_tuxedo_dmi_string_check_match))) {
+-		return true;
+-	}
+-	return false;
++	return true;
+ }
+ EXPORT_SYMBOL(tuxedo_is_compatible);
+ 
