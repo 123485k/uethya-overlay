@@ -6,6 +6,8 @@ EAPI=8
 PYTHON_COMPAT=( python3_{8,9,10,11,12,13} )
 DISTUTILS_USE_SETUPTOOLS=rdepend
 
+DISTUTILS_USE_PEP517=setuptools
+
 inherit distutils-r1 systemd
 
 DESCRIPTION="Management utility to handle GPU switching for Optimus laptops"
